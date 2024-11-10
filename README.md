@@ -48,11 +48,6 @@ To build a serverless AWS Lambda function in Node.js that processes and logs rea
      - `DB_PASSWORD`: Your RDS password.
      - `DB_NAME`: Your database name.
 
-### Step 5: Error Handling and Duplicate Events
-
-- The `UNIQUE KEY` constraint on the `events` table prevents duplicate entries based on `user_id`, `event_type`, and `timestamp`.
-- The error handling in both Lambda functions captures database connection errors and malformed data.
-
 ### Testing
 
 1. **Deploy and Test API Endpoints:**
